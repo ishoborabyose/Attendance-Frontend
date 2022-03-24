@@ -26,7 +26,7 @@ function Login() {
               <input
                 type="text"
                 id="email"
-                placeholder="example@mydiary.com"
+                placeholder="example@attendance.com"
                 required
               ></input>
             </div>

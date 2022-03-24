@@ -6,7 +6,7 @@ function Secondary() {
       <div class="header">
         <div class="logo"></div>
       </div>
-
+      <div class="title">Secondary</div>
       <div class="stories">
         <div class="story">
           <div class="content">

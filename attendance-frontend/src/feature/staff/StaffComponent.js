@@ -6,7 +6,7 @@ function Staff() {
       <div class="header">
         <div class="logo"></div>
       </div>
-
+      <div class="title">Staff</div>
       <div class="stories">
         <div class="story">
           <div class="content">
