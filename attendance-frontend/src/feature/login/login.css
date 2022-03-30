@@ -100,20 +100,29 @@ input:focus {
 }
 
 button {
-  width: 290.55px;
-  background: #020024;
-  color: #8d8d8d;
-  text-decoration: none;
-  padding: 12px 20px;
-  border: 1px solid rgb(129, 109, 109);
-  border-radius: 4px;
+  color: #fff;
+  background-color: #020024;
+  border-color: #020024;
+  height: 40px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
   cursor: pointer;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-
-button:hover {
-  background: #f6f6f6;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 button:focus {

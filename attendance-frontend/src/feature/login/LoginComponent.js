@@ -18,7 +18,7 @@ function Login() {
         </div>
         <div class="signin-form">
           <div>
-            <h1 class="signin">Sign in</h1>
+            <h1 class="signin">Log in</h1>
           </div>
           <div class="input-field">
             <div>
@@ -43,12 +43,12 @@ function Login() {
             </div>
           </div>
           <a href="/selection">
-            <button>Sign in</button>{" "}
+            <button>Log in</button>{" "}
           </a>
           <div class="go-signup">
             Are you a guardian?{" "}
-            <a class="link" href="#">
-              Sign in here
+            <a class="link" href="/guardian">
+              Log in here
             </a>
           </div>
         </div>

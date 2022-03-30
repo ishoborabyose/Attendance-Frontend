@@ -8,6 +8,7 @@ import Primary from "../feature/primary/PrimaryComponent";
 import Secondary from "../feature/secondary/SecondaryComponent";
 import Kindergarten from "../feature/kindergaten/KindergartenComponent";
 import Staff from "../feature/staff/StaffComponent";
+import Guardian from "../feature/guardian/GuardianComponent";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/secondary" element={<Secondary />} />
           <Route path="/kindergaten" element={<Kindergarten />} />
           <Route path="/staff" element={<Staff />} />
+          <Route path="/guardian" element={<Guardian />} />
         </Routes>
       </BrowserRouter>
     </div>
