@@ -1,5 +1,6 @@
-.container {
+.containeri {
   height: 100%;
+
   display: grid;
   grid-template-rows: 90px auto;
   overflow: hidden;
@@ -26,11 +27,11 @@
 .title {
   font-size: 50px;
   font-weight: bolder;
-  padding-top: 100px;
   color: #020024;
+  font-family: sans-serif;
 }
 .stories {
-  margin-top: 10%;
+  margin-top: 0px;
   padding: 32px;
   overflow-y: auto;
   display: grid;
@@ -62,11 +63,12 @@
 
 .content {
   line-height: 16px;
-  height: 48px;
+  height: 40px;
   overflow: hidden;
   color: #020024;
   font-size: 25px;
-  margin-top: 25px;
+  padding-top: 25px;
+  font-family: sans-serif;
 }
 
 #link {
@@ -74,7 +76,8 @@
   color: #020024;
   font-size: 25px;
   line-height: 16px;
-  height: 48px;
+  height: 40px;
+  font-family: sans-serif;
 }
 #link:hover {
   color: gray;

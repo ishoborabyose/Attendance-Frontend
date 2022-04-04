@@ -1,4 +1,4 @@
-.container {
+.containeri {
   height: 100%;
   display: grid;
   grid-template-rows: 90px auto;
@@ -28,6 +28,7 @@
   font-weight: bolder;
   padding-top: 100px;
   color: #020024;
+  font-family: sans-serif;
 }
 .storiess {
   margin-top: 10%;
@@ -52,12 +53,17 @@
 
 .story {
   padding: 22px;
-  background-color: #d2dae6;
+
   width: 360px;
   max-width: 360px;
   display: grid;
   border-radius: 4px;
   position: relative;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-color: #d2dae6;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #d2dae6;
 }
 
 .contents {
@@ -66,7 +72,8 @@
   overflow: hidden;
   color: #020024;
   font-size: 25px;
-  margin-top: 25px;
+  padding-top: 30px;
+  font-family: sans-serif;
 }
 
 #link {
@@ -75,6 +82,7 @@
   font-size: 25px;
   line-height: 16px;
   height: 48px;
+  font-family: sans-serif;
 }
 #link:hover {
   color: gray;

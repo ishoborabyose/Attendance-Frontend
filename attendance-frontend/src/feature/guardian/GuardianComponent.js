@@ -10,29 +10,19 @@ function Guardian() {
         <div class="form">
           <h2 class="head">Guardian</h2>
           <form class="login-form">
-            <input name="utf8" type="hidden" value="✓"></input>
-            <input name="utf8" type="hidden" value="✓"></input>
             <div class="field">
-              <label class="control-label" for="user_login">
-                Guardian Code
-              </label>
+              <label class="control-label">Guardian Code</label>
               <br></br>
-              <input
-                autofocus="autofocus"
-                class="form-control"
-                type="text"
-                name="user[login]"
-                id="user_login"
-              ></input>
+              <input class="form-control" type="integer"></input>
             </div>
+
             <div class="actions">
-              <input
-                type="submit"
-                name="commit"
-                value="Log in"
-                class="btn btn-primary"
-                data-disable-with="Log in"
-              ></input>
+              <button type="submit" value="Log in" class="btn btn-primary">
+                <a href="/table" class="links">
+                  {" "}
+                  Log in{" "}
+                </a>
+              </button>
             </div>
           </form>
         </div>

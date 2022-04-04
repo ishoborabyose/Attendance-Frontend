@@ -2,7 +2,7 @@ import "./kindergaten.css";
 
 function Kindergarten() {
   return (
-    <div class="container">
+    <div class="containeri">
       <div class="header">
         <div class="logo"></div>
       </div>
@@ -10,7 +10,7 @@ function Kindergarten() {
       <div class="storiess">
         <div class="story">
           <div class="contents">
-            <a href="#" id="link">
+            <a href="/table" id="link">
               Baby
             </a>
           </div>
@@ -18,14 +18,14 @@ function Kindergarten() {
 
         <div class="story">
           <div class="contents">
-            <a href="#" id="link">
+            <a href="/table" id="link">
               Middle
             </a>{" "}
           </div>
         </div>
         <div class="story">
           <div class="contents">
-            <a href="#" id="link">
+            <a href="/table" id="link">
               Top
             </a>
           </div>
