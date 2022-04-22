@@ -7,7 +7,7 @@ function Selection() {
         <div class="logo"></div>
       </div>
 
-      <div class="stories">
+      <div class="storiesss">
         <div class="story">
           <div class="content">
             <a href="/primary" id="link">
@@ -34,6 +34,14 @@ function Selection() {
           <div class="content">
             <a href="/staff" id="link">
               Staff
+            </a>{" "}
+          </div>
+        </div>
+
+        <div class="story">
+          <div class="content">
+            <a href="/staff" id="link">
+              University
             </a>{" "}
           </div>
         </div>
