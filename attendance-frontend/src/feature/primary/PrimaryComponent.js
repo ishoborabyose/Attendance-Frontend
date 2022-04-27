@@ -1,7 +1,7 @@
-import "./primary.css";
-import React from "react";
-import { Link } from "react-router-dom";
-import TableComponent from "../table/TableComponent";
+import './primary.css';
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
+import TableComponent from '../table/TableComponent';
 
 function Primary({ name }) {
   return (
@@ -14,9 +14,8 @@ function Primary({ name }) {
       <div class="stories">
         <div class="story">
           <div class="content">
-            <Link to="/id" id="link">
+            <Link to="/P1" id="link">
               p1
-              <TableComponent name={name} />
             </Link>
             {/* <a href="/table" id="link">
               P 1
@@ -27,8 +26,8 @@ function Primary({ name }) {
         <div class="story">
           <div class="content">
             <Link to="/table" id="link">
-              {" "}
-              P 2{" "}
+              {' '}
+              P 2{' '}
             </Link>
             {/* <a href="/table" id="link">
               P 2
@@ -38,8 +37,8 @@ function Primary({ name }) {
         <div class="story">
           <div class="content">
             <Link to="/table" id="link">
-              {" "}
-              P 3{" "}
+              {' '}
+              P 3{' '}
             </Link>
             {/* <a href="/table" id="link">
               P 3
@@ -49,8 +48,8 @@ function Primary({ name }) {
         <div class="story">
           <div class="content">
             <Link to="/table" id="link">
-              {" "}
-              P 4{" "}
+              {' '}
+              P 4{' '}
             </Link>
             {/* <a href="/table" id="link">
               P 4
@@ -60,8 +59,8 @@ function Primary({ name }) {
         <div class="story">
           <div class="content">
             <Link to="/table" id="link">
-              {" "}
-              P 5{" "}
+              {' '}
+              P 5{' '}
             </Link>
             {/* <a href="/table" id="link">
               P 5
@@ -71,8 +70,8 @@ function Primary({ name }) {
         <div class="story">
           <div class="content">
             <Link to="/table" id="link">
-              {" "}
-              P 1{" "}
+              {' '}
+              P 1{' '}
             </Link>
             {/* <a href="/table" id="link">
               P 6
