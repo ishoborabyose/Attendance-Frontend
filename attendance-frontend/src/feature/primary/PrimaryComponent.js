@@ -1,6 +1,9 @@
 import "./primary.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import TableComponent from "../table/TableComponent";
 
-function Primary() {
+function Primary({ name }) {
   return (
     <div class="containeri">
       <div class="header">
@@ -11,45 +14,69 @@ function Primary() {
       <div class="stories">
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/id" id="link">
+              p1
+              <TableComponent name={name} />
+            </Link>
+            {/* <a href="/table" id="link">
               P 1
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              P 2{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               P 2
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              P 3{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               P 3
-            </a>
+            </a> */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              P 4{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               P 4
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              P 5{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               P 5
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              P 1{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               P 6
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
       </div>

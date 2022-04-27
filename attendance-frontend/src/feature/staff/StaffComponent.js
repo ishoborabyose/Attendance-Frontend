@@ -1,4 +1,6 @@
 import "./staff.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Staff() {
   return (
@@ -10,59 +12,91 @@ function Staff() {
       <div class="stories">
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Administration{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Administration
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Finance{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Finance
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              IT{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               IT
-            </a>
+            </a> */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Teachers{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Teachers
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Nurses{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Nurses
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Social workers{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Social workers
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Securities{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Securities
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Staff Students{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Staff Students
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
       </div>

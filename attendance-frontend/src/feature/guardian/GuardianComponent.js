@@ -1,4 +1,6 @@
 import "./guardian.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Guardian() {
   return (
@@ -18,10 +20,14 @@ function Guardian() {
 
             <div class="actions">
               <button type="submit" value="Log in" class="btn btn-primary">
-                <a href="/table" class="links">
+                <Link to="/table" id="links">
                   {" "}
                   Log in{" "}
-                </a>
+                </Link>
+                {/* <a href="/table" class="links">
+                  {" "}
+                  Log in{" "}
+                </a> */}
               </button>
             </div>
           </form>

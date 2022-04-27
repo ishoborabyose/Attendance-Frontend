@@ -10,6 +10,7 @@ import Kindergarten from "../feature/kindergaten/KindergartenComponent";
 import Staff from "../feature/staff/StaffComponent";
 import Guardian from "../feature/guardian/GuardianComponent";
 import Table from "../feature/table/TableComponent";
+import PrivateRoute from "../Routes/PrivateRoutes";
 
 function App() {
   return (
@@ -17,13 +18,60 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/selection" element={<Selection />} />
-          <Route path="/primary" element={<Primary />} />
-          <Route path="/secondary" element={<Secondary />} />
-          <Route path="/kindergaten" element={<Kindergarten />} />
-          <Route path="/staff" element={<Staff />} />
+          <Route
+            path="/selection"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Selection />{" "}
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/primary"
+            element={
+              <PrivateRoute>
+                <Primary />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/secondary"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Secondary />{" "}
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/kindergaten"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Kindergarten />{" "}
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/staff"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Staff />{" "}
+              </PrivateRoute>
+            }
+          />
           <Route path="/guardian" element={<Guardian />} />
-          <Route path="/table" element={<Table />} />
+          <Route
+            path="/table"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Table />{" "}
+              </PrivateRoute>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>

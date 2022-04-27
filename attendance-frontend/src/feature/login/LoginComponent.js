@@ -36,9 +36,7 @@ export default function Login() {
               password: "",
             });
           });
-          isAuth() && isAuth().role === "user"
-            ? navigate("/selection")
-            : navigate("/");
+          isAuth() ? navigate("/selection") : navigate("/");
         })
         .catch((err) => {
           setFormData({
@@ -52,7 +50,6 @@ export default function Login() {
 
   return (
     <div class="container">
-      {isAuth() ? <Navigate to="/" /> : null}
       <div class="header">
         <div class="logo"></div>
       </div>

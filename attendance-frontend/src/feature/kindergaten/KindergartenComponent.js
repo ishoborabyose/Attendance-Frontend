@@ -1,4 +1,6 @@
 import "./kindergaten.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Kindergarten() {
   return (
@@ -10,24 +12,36 @@ function Kindergarten() {
       <div class="storiess">
         <div class="story">
           <div class="contents">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Baby{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Baby
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div class="story">
           <div class="contents">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Middle{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Middle
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="contents">
-            <a href="/table" id="link">
+            <Link to="/table" id="link">
+              {" "}
+              Top{" "}
+            </Link>
+            {/* <a href="/table" id="link">
               Top
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

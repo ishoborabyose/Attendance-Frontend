@@ -1,4 +1,6 @@
 import "./selection.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Selection() {
   return (
@@ -10,39 +12,59 @@ function Selection() {
       <div class="storiesss">
         <div class="story">
           <div class="content">
-            <a href="/primary" id="link">
+            <Link to="/primary" id="link">
+              {" "}
+              Primary{" "}
+            </Link>
+            {/* <a href="/primary" id="link">
               Primary
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div class="story">
           <div class="content">
-            <a href="/secondary" id="link">
+            <Link to="/secondary" id="link">
+              {" "}
+              Secondary{" "}
+            </Link>
+            {/* <a href="/secondary" id="link">
               Secondary
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/kindergaten" id="link">
+            <Link to="/kindergaten" id="link">
+              {" "}
+              Kindergarten{" "}
+            </Link>
+            {/* <a href="/kindergaten" id="link">
               Kindergarten
-            </a>
+            </a> */}
           </div>
         </div>
         <div class="story">
           <div class="content">
-            <a href="/staff" id="link">
+            <Link to="/staff" id="link">
+              {" "}
+              Staff{" "}
+            </Link>
+            {/* <a href="/staff" id="link">
               Staff
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
 
         <div class="story">
           <div class="content">
-            <a href="/staff" id="link">
+            <Link to="/staff" id="link">
+              {" "}
+              University{" "}
+            </Link>
+            {/* <a href="/staff" id="link">
               University
-            </a>{" "}
+            </a>{" "} */}
           </div>
         </div>
       </div>
