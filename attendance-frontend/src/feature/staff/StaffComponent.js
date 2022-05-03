@@ -12,7 +12,7 @@ function Staff() {
       <div class="stories">
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/administration" id="link">
               {" "}
               Administration{" "}
             </Link>
@@ -24,7 +24,7 @@ function Staff() {
 
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/finance" id="link">
               {" "}
               Finance{" "}
             </Link>
@@ -35,7 +35,7 @@ function Staff() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/it" id="link">
               {" "}
               IT{" "}
             </Link>
@@ -46,7 +46,7 @@ function Staff() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/teachers" id="link">
               {" "}
               Teachers{" "}
             </Link>
@@ -57,7 +57,7 @@ function Staff() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/nurses" id="link">
               {" "}
               Nurses{" "}
             </Link>
@@ -68,7 +68,7 @@ function Staff() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/social" id="link">
               {" "}
               Social workers{" "}
             </Link>
@@ -79,7 +79,7 @@ function Staff() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/securities" id="link">
               {" "}
               Securities{" "}
             </Link>
@@ -90,7 +90,7 @@ function Staff() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/students" id="link">
               {" "}
               Staff Students{" "}
             </Link>
