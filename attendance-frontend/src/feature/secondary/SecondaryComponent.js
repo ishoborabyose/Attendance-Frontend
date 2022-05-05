@@ -12,7 +12,7 @@ function Secondary() {
       <div class="stories">
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/s1" id="link">
               {" "}
               S 1{" "}
             </Link>
@@ -24,7 +24,7 @@ function Secondary() {
 
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/s2" id="link">
               {" "}
               S 2{" "}
             </Link>
@@ -35,7 +35,7 @@ function Secondary() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/s3" id="link">
               {" "}
               S 3{" "}
             </Link>
@@ -46,7 +46,7 @@ function Secondary() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/s4" id="link">
               {" "}
               S 4{" "}
             </Link>
@@ -57,7 +57,7 @@ function Secondary() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/s5" id="link">
               {" "}
               S 5{" "}
             </Link>
@@ -68,7 +68,7 @@ function Secondary() {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/s6" id="link">
               {" "}
               S 6{" "}
             </Link>

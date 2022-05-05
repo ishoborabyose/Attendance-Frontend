@@ -12,7 +12,7 @@ function Kindergarten() {
       <div class="storiess">
         <div class="story">
           <div class="contents">
-            <Link to="/table" id="link">
+            <Link to="/baby" id="link">
               {" "}
               Baby{" "}
             </Link>
@@ -24,7 +24,7 @@ function Kindergarten() {
 
         <div class="story">
           <div class="contents">
-            <Link to="/table" id="link">
+            <Link to="/middle" id="link">
               {" "}
               Middle{" "}
             </Link>
@@ -35,7 +35,7 @@ function Kindergarten() {
         </div>
         <div class="story">
           <div class="contents">
-            <Link to="/table" id="link">
+            <Link to="/top" id="link">
               {" "}
               Top{" "}
             </Link>

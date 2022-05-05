@@ -1,9 +1,8 @@
 import './primary.css';
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import TableComponent from '../table/TableComponent';
+import { Link } from 'react-router-dom';
 
-function Primary({ name }) {
+function Primary() {
   return (
     <div class="containeri">
       <div class="header">
@@ -25,7 +24,7 @@ function Primary({ name }) {
 
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/p2" id="link">
               {' '}
               P 2{' '}
             </Link>
@@ -36,7 +35,7 @@ function Primary({ name }) {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/p3" id="link">
               {' '}
               P 3{' '}
             </Link>
@@ -47,7 +46,7 @@ function Primary({ name }) {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/p4" id="link">
               {' '}
               P 4{' '}
             </Link>
@@ -58,7 +57,7 @@ function Primary({ name }) {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/p5" id="link">
               {' '}
               P 5{' '}
             </Link>
@@ -69,9 +68,9 @@ function Primary({ name }) {
         </div>
         <div class="story">
           <div class="content">
-            <Link to="/table" id="link">
+            <Link to="/p6" id="link">
               {' '}
-              P 1{' '}
+              P 6{' '}
             </Link>
             {/* <a href="/table" id="link">
               P 6
