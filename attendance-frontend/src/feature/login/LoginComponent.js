@@ -23,7 +23,7 @@ export default function Login() {
     if (email && password) {
       console.log("Provided");
       axios
-        .post("http://localhost:8080/api/login", {
+        .post("http://localhost:8080/attendance/login", {
           email,
           password,
         })
