@@ -26,7 +26,7 @@ export default function Login() {
     if (email && password) {
       console.log("Provided");
       axios
-        .post(`http://attendance.bazafarm.rw/attendance/login`, {
+        .post("http://attendance.bazafarm.rw/attendance/login", {
           email,
           password,
         })
@@ -59,10 +59,9 @@ export default function Login() {
 
       <div class="containers">
         <div class="intro">
-          <h3>What is Lorem Ipsum</h3>
+          <h3>Attendance Management System</h3>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
+            Attendance Management System
           </p>
         </div>
 
