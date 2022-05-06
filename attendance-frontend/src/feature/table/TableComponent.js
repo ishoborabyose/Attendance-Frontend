@@ -2,9 +2,13 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { getCookie, isAuth } from "../../helpers/Auth";
-import "./table.css";
+// import "./table.css";
+import 'datatables.net-dt/js/dataTables.dataTables';
+import 'datatables.net-dt/css/jquery.dataTables.min.css';
+import $ from 'jquery';
 
 function Table(props) {
+
   const ClassIdentifier = props.name;
   const url = `http://localhost:8080/api/all-entries/${ClassIdentifier}`;
   const [newAttendee, setNewAttendee] = useState({
@@ -46,18 +50,18 @@ function Table(props) {
       });
   }, [url]);
 
+  $(document).ready(function () {
+    $('#example').DataTable();
+  });
   console.log(newAttendee.data);
   if (newAttendee.data) {
     table = newAttendee.data.map((receive) => (
-      <>
-        <div class="layout">{receive.id}</div>
-        <div class="layout">{receive.studentId}</div>
-        <div class="layout">{new Date(receive.createdAt).toLocaleString()}</div>
-        <div class="layout">{new Date(receive.createdAt).toLocaleString()}</div>
-        <div class="layout">{new Date(receive.createdAt).toLocaleString()}</div>
-        <div class="layout">{new Date(receive.createdAt).toLocaleString()}</div>
-        <div class="layout">{new Date(receive.createdAt).toLocaleString()}</div>
-      </>
+      <tr>
+        <td>{receive.id}</td>
+        <td>{receive.studentId}</td>
+        <td>{new Date(receive.createdAt).toLocaleString()}</td>
+        
+      </tr>
     ));
   }
 
@@ -67,60 +71,35 @@ function Table(props) {
         <div class="logo"></div>
       </div>
 
-      <div class="history">
-        <div id="keyboard">
-          <div class="frame">No</div>
-          <div class="frame">Reg No</div>
-          <div class="frame">Mon</div>
-          <div class="frame">Tue</div>
-          <div class="frame">wed</div>
-          <div class="frame">Thur</div>
-          <div class="frame">Fri</div>
-
-          {table}
-
-          {/* <div class="layout">001</div>
-          <div class="layout">21807</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div> */}
-          {/* 
-          <div class="layout">001</div>
-          <div class="layout">21807</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-
-          <div class="layout">001</div>
-          <div class="layout">21807</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div> */}
-
-          {/* <div class="layout">001</div>
-          <div class="layout">21807</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-
-          <div class="layout">001</div>
-          <div class="layout">21807</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div>
-          <div class="layout">30/08/2020 10:40</div> */}
-        </div>
+      <div
+      style={{
+        width: '70%',
+        marginTop: "30px",
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding: '100px',   
+        
+      }}
+    >
+      <table id="example" class="display">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student Id</th>
+            
+            <th>Time</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+       
+        { table}
+        </tbody>
+      </table>
+    </div>
+      <div id="add">
+      <button >Generate Report</button>
       </div>
-      <button id="add">Generate Report</button>
     </div>
   );
 }

@@ -63,7 +63,7 @@ function App() {
             }
           />
           <Route path="/guardian" element={<Guardian />} />
-          <Route
+          {/* <Route
             path="/table"
             element={
               <PrivateRoute>
@@ -71,7 +71,8 @@ function App() {
                 <Table />{" "}
               </PrivateRoute>
             }
-          />
+          /> */}
+           <Route path="/table" element={<Table />} />
 
           <Route
             path="/P1"
