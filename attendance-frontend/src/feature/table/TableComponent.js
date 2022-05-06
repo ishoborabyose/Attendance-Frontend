@@ -10,7 +10,7 @@ import $ from 'jquery';
 function Table(props) {
 
   const ClassIdentifier = props.name;
-  const url = `http://localhost:8080/api/all-entries/${ClassIdentifier}`;
+  const url = `http://localhost:8080/attendance/all-entries/${ClassIdentifier}`;
   const [newAttendee, setNewAttendee] = useState({
     loading: false,
     data: null,
