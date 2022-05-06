@@ -6,11 +6,14 @@ import { getCookie, isAuth } from "../../helpers/Auth";
 import 'datatables.net-dt/js/dataTables.dataTables';
 import 'datatables.net-dt/css/jquery.dataTables.min.css';
 import $ from 'jquery';
+// import { config } from "dotenv"
+
+// config();
 
 function Table(props) {
 
   const ClassIdentifier = props.name;
-  const url = `http://localhost:8080/attendance/all-entries/${ClassIdentifier}`;
+  const url = `http://attendance.bazafarm.rw/attendance/all-entries/${ClassIdentifier}`;
   const [newAttendee, setNewAttendee] = useState({
     loading: false,
     data: null,

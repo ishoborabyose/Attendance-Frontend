@@ -3,6 +3,9 @@ import axios from "axios";
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router";
 import "./login.css";
+// import { config } from "dotenv"
+
+// config();
 
 export default function Login() {
   let navigate = useNavigate();
@@ -23,7 +26,7 @@ export default function Login() {
     if (email && password) {
       console.log("Provided");
       axios
-        .post("http://localhost:8080/attendance/login", {
+        .post(`http://attendance.bazafarm.rw/attendance/login`, {
           email,
           password,
         })
