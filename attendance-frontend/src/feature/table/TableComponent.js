@@ -53,11 +53,12 @@ function Table(props) {
       });
   }, [url]);
 
-  $(document).ready(function () {
-    $('#example').DataTable();
-  });
+ 
   console.log(newAttendee.data);
   if (newAttendee.data) {
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
     table = newAttendee.data.map((receive) => (
       <tr>
         <td>{receive.id}</td>
