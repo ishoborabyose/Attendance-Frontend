@@ -58,7 +58,7 @@ function Selection() {
 
         <div class="story">
           <div class="content">
-            <Link to="/staff" id="link">
+            <Link to="/university" id="link">
               {" "}
               University{" "}
             </Link>

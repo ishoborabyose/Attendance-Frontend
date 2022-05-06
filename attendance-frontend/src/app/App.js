@@ -11,6 +11,7 @@ import Staff from "../feature/staff/StaffComponent";
 import Guardian from "../feature/guardian/GuardianComponent";
 import Table from "../feature/table/TableComponent";
 import PrivateRoute from "../Routes/PrivateRoutes";
+import University from '../feature/university/University';
 
 function App() {
   return (
@@ -24,6 +25,14 @@ function App() {
               <PrivateRoute>
                 {" "}
                 <Selection />{" "}
+              </PrivateRoute>
+            }
+          />
+           <Route
+            path="/university"
+            element={
+              <PrivateRoute>
+                <University />
               </PrivateRoute>
             }
           />
@@ -285,6 +294,45 @@ function App() {
               </PrivateRoute>
             }
           />
+
+<Route
+            path="/Level_one"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Table name="level_one" />{" "}
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/Level_two"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Table name="level_two" />{" "}
+              </PrivateRoute>
+            }
+          />
+          
+          <Route
+            path="/level_three"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Table name="level_three" />{" "}
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/Level_four"
+            element={
+              <PrivateRoute>
+                {" "}
+                <Table name="level_four" />{" "}
+              </PrivateRoute>
+            }
+          />
+          
         </Routes>
       </BrowserRouter>
     </div>
