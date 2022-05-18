@@ -1,17 +1,18 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import "./App.css";
-import Login from "../feature/login/LoginComponent";
-import Selection from "../feature/selection/SelectionComponent";
-import Primary from "../feature/primary/PrimaryComponent";
-import Secondary from "../feature/secondary/SecondaryComponent";
-import Kindergarten from "../feature/kindergaten/KindergartenComponent";
-import Staff from "../feature/staff/StaffComponent";
-import Guardian from "../feature/guardian/GuardianComponent";
-import Table from "../feature/table/TableComponent";
-import PrivateRoute from "../Routes/PrivateRoutes";
+import './App.css';
+import Login from '../feature/login/LoginComponent';
+import Selection from '../feature/selection/SelectionComponent';
+import Primary from '../feature/primary/PrimaryComponent';
+import Secondary from '../feature/secondary/SecondaryComponent';
+import Kindergarten from '../feature/kindergaten/KindergartenComponent';
+import Staff from '../feature/staff/StaffComponent';
+import Guardian from '../feature/guardian/GuardianComponent';
+import Table from '../feature/table/TableComponent';
+import PrivateRoute from '../Routes/PrivateRoutes';
 import University from '../feature/university/University';
+import Presence from '../feature/presence/Presence';
 
 function App() {
   return (
@@ -19,16 +20,17 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/presence" element={<Presence />} />
           <Route
             path="/selection"
             element={
               <PrivateRoute>
-                {" "}
-                <Selection />{" "}
+                {' '}
+                <Selection />{' '}
               </PrivateRoute>
             }
           />
-           <Route
+          <Route
             path="/university"
             element={
               <PrivateRoute>
@@ -48,8 +50,8 @@ function App() {
             path="/secondary"
             element={
               <PrivateRoute>
-                {" "}
-                <Secondary />{" "}
+                {' '}
+                <Secondary />{' '}
               </PrivateRoute>
             }
           />
@@ -57,8 +59,8 @@ function App() {
             path="/kindergaten"
             element={
               <PrivateRoute>
-                {" "}
-                <Kindergarten />{" "}
+                {' '}
+                <Kindergarten />{' '}
               </PrivateRoute>
             }
           />
@@ -66,8 +68,8 @@ function App() {
             path="/staff"
             element={
               <PrivateRoute>
-                {" "}
-                <Staff />{" "}
+                {' '}
+                <Staff />{' '}
               </PrivateRoute>
             }
           />
@@ -81,14 +83,14 @@ function App() {
               </PrivateRoute>
             }
           /> */}
-           <Route path="/table" element={<Table />} />
+          <Route path="/table" element={<Table />} />
 
           <Route
             path="/P1"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="p1" />{" "}
+                {' '}
+                <Table name="p1" />{' '}
               </PrivateRoute>
             }
           />
@@ -96,8 +98,8 @@ function App() {
             path="/P2"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="p2" />{" "}
+                {' '}
+                <Table name="p2" />{' '}
               </PrivateRoute>
             }
           />
@@ -105,8 +107,8 @@ function App() {
             path="/P3"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="p3" />{" "}
+                {' '}
+                <Table name="p3" />{' '}
               </PrivateRoute>
             }
           />
@@ -114,8 +116,8 @@ function App() {
             path="/P4"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="p4" />{" "}
+                {' '}
+                <Table name="p4" />{' '}
               </PrivateRoute>
             }
           />
@@ -123,8 +125,8 @@ function App() {
             path="/P5"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="p5" />{" "}
+                {' '}
+                <Table name="p5" />{' '}
               </PrivateRoute>
             }
           />
@@ -132,8 +134,8 @@ function App() {
             path="/P6"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="p6" />{" "}
+                {' '}
+                <Table name="p6" />{' '}
               </PrivateRoute>
             }
           />
@@ -142,8 +144,8 @@ function App() {
             path="/S1"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="s1" />{" "}
+                {' '}
+                <Table name="s1" />{' '}
               </PrivateRoute>
             }
           />
@@ -151,8 +153,8 @@ function App() {
             path="/S2"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="s2" />{" "}
+                {' '}
+                <Table name="s2" />{' '}
               </PrivateRoute>
             }
           />
@@ -160,8 +162,8 @@ function App() {
             path="/S3"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="s3" />{" "}
+                {' '}
+                <Table name="s3" />{' '}
               </PrivateRoute>
             }
           />
@@ -169,8 +171,8 @@ function App() {
             path="/S4"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="s4" />{" "}
+                {' '}
+                <Table name="s4" />{' '}
               </PrivateRoute>
             }
           />
@@ -178,8 +180,8 @@ function App() {
             path="/S5"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="s5" />{" "}
+                {' '}
+                <Table name="s5" />{' '}
               </PrivateRoute>
             }
           />
@@ -187,8 +189,8 @@ function App() {
             path="/S6"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="s6" />{" "}
+                {' '}
+                <Table name="s6" />{' '}
               </PrivateRoute>
             }
           />
@@ -197,8 +199,8 @@ function App() {
             path="/Baby"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="baby" />{" "}
+                {' '}
+                <Table name="baby" />{' '}
               </PrivateRoute>
             }
           />
@@ -206,8 +208,8 @@ function App() {
             path="/Middle"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="middle" />{" "}
+                {' '}
+                <Table name="middle" />{' '}
               </PrivateRoute>
             }
           />
@@ -215,8 +217,8 @@ function App() {
             path="/Top"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="top" />{" "}
+                {' '}
+                <Table name="top" />{' '}
               </PrivateRoute>
             }
           />
@@ -225,8 +227,8 @@ function App() {
             path="/Administration"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="administration" />{" "}
+                {' '}
+                <Table name="administration" />{' '}
               </PrivateRoute>
             }
           />
@@ -234,8 +236,8 @@ function App() {
             path="/Finance"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="finance" />{" "}
+                {' '}
+                <Table name="finance" />{' '}
               </PrivateRoute>
             }
           />
@@ -243,8 +245,8 @@ function App() {
             path="/IT"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="it" />{" "}
+                {' '}
+                <Table name="it" />{' '}
               </PrivateRoute>
             }
           />
@@ -252,8 +254,8 @@ function App() {
             path="/Teachers"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="teachers" />{" "}
+                {' '}
+                <Table name="teachers" />{' '}
               </PrivateRoute>
             }
           />
@@ -261,8 +263,8 @@ function App() {
             path="/Nurses"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="nurses" />{" "}
+                {' '}
+                <Table name="nurses" />{' '}
               </PrivateRoute>
             }
           />
@@ -271,8 +273,8 @@ function App() {
             path="/Social"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="social" />{" "}
+                {' '}
+                <Table name="social" />{' '}
               </PrivateRoute>
             }
           />
@@ -280,8 +282,8 @@ function App() {
             path="/Securities"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="securities" />{" "}
+                {' '}
+                <Table name="securities" />{' '}
               </PrivateRoute>
             }
           />
@@ -289,18 +291,18 @@ function App() {
             path="/Students"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="students" />{" "}
+                {' '}
+                <Table name="students" />{' '}
               </PrivateRoute>
             }
           />
 
-<Route
+          <Route
             path="/Level_one"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="level_one" />{" "}
+                {' '}
+                <Table name="level_one" />{' '}
               </PrivateRoute>
             }
           />
@@ -308,18 +310,18 @@ function App() {
             path="/Level_two"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="level_two" />{" "}
+                {' '}
+                <Table name="level_two" />{' '}
               </PrivateRoute>
             }
           />
-          
+
           <Route
             path="/level_three"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="level_three" />{" "}
+                {' '}
+                <Table name="level_three" />{' '}
               </PrivateRoute>
             }
           />
@@ -327,12 +329,11 @@ function App() {
             path="/Level_four"
             element={
               <PrivateRoute>
-                {" "}
-                <Table name="level_four" />{" "}
+                {' '}
+                <Table name="level_four" />{' '}
               </PrivateRoute>
             }
           />
-          
         </Routes>
       </BrowserRouter>
     </div>

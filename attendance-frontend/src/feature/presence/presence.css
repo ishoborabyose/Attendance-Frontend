@@ -1,0 +1,39 @@
+.presence--whole {
+  background-color: white;
+  height: 200vh;
+  width: 100%;
+  color: black;
+}
+
+.input--box {
+  border: 1px black solid;
+  height: 10px;
+  margin-top: 100px;
+}
+
+.submit--input {
+  border: none;
+  color: black;
+  background-color: skyblue;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.submit--input:hover {
+  color: black;
+}
+
+.lab--box {
+  font-weight: bold;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: black;
+}
+
+.label {
+  color: black;
+}
