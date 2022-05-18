@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './presence.css';
 import Indetified from './Identified';
+
 let content = null;
 export default function Presence() {
   const [studentId, setStudentId] = useState({

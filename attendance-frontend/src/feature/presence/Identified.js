@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './presence.css';
+import { Link } from "react-router-dom";
 
 export default function Indetified(props) {
   console.log(props.indetification);
@@ -308,7 +309,10 @@ export default function Indetified(props) {
         </div>
       </div>
 
-      <button type="submit">Done</button>
+      <Link to="/done">
+      <button type="submit" id='btn'>Done</button>
+            </Link>
+      
     </form>
   );
 }

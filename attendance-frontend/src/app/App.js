@@ -13,6 +13,7 @@ import Table from '../feature/table/TableComponent';
 import PrivateRoute from '../Routes/PrivateRoutes';
 import University from '../feature/university/University';
 import Presence from '../feature/presence/Presence';
+import Done from '../feature/presence/done';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/presence" element={<Presence />} />
+          <Route path="/done" element={<Done />} />
           <Route
             path="/selection"
             element={

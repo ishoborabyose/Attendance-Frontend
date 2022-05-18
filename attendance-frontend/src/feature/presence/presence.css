@@ -1,6 +1,6 @@
 .presence--whole {
   background-color: white;
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   color: black;
 }
@@ -36,4 +36,8 @@
 
 .label {
   color: black;
+}
+
+#btn{
+  background-color: #8BC34A;
 }
