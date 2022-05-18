@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './presence.css';
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router';
 
 export default function Indetified(props) {
-  console.log(props.indetification);
+  let navigate = useNavigate();
   const url = `http://attendance.bazafarm.rw/attendance/search?studentId=${props.indetification}`;
   const updateUrl = `http://attendance.bazafarm.rw/attendance/update?studentId=${props.indetification}`;
   const [formData, setFormData] = useState({
@@ -89,7 +89,7 @@ export default function Indetified(props) {
         department,
         codePromotion,
       })
-      .then()
+      .then(navigate('/done'))
       .catch((err) => {
         console.log(err);
       });
@@ -303,16 +303,14 @@ export default function Indetified(props) {
               name="codePromotion"
               onChange={handleChange('codePromotion')}
               value={codePromotion}
-              required
             ></input>
           </div>
         </div>
       </div>
 
-      <Link to="/done">
-      <button type="submit" id='btn'>Done</button>
-            </Link>
-      
+      <button type="submit" id="btn">
+        Done
+      </button>
     </form>
   );
 }
