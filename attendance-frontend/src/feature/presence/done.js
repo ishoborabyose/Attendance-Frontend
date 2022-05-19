@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Done() {
   return (
       
-      <div className='container'>
+      <div className='contain'>
           <div id='card' class="animated fadeIn">
   <div id='upper-side'>
   <svg version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" >

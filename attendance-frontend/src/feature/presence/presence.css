@@ -1,6 +1,7 @@
 .presence--whole {
   background-color: white;
   height: 100vh;
+  overflow: hidden;
   width: 100%;
   color: black;
 }
