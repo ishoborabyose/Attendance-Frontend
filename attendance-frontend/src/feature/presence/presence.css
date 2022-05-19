@@ -42,3 +42,17 @@
 #btn{
   background-color: #8BC34A;
 }
+
+@media only screen and (max-width: 500px) {
+  .presence--whole {
+    background-color: white;
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+    color: black;
+  }
+  .field {
+    display: inline;
+    color: black;
+  }
+}
